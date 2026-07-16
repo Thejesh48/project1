@@ -1,0 +1,332 @@
+/* ===========================
+   Google Fonts
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   Global
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#FDFBF8;
+
+    color:#222;
+
+    overflow-x:hidden;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+img{
+
+    max-width:100%;
+
+}
+
+/* ===========================
+Hero Section
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(
+    135deg,
+    #FDFBF8,
+    #FFF6EA);
+
+    padding-top:100px;
+
+}
+
+/* Heading */
+
+.hero-title{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:68px;
+
+    line-height:1.1;
+
+    font-weight:700;
+
+    color:#222;
+
+}
+
+/* Paragraph */
+
+.hero p{
+
+    font-size:18px;
+
+    line-height:32px;
+
+    color:#666;
+
+}
+
+/* Buttons */
+
+.btn-dark{
+
+    border-radius:50px;
+
+    padding:14px 35px;
+
+    transition:.4s;
+
+}
+
+.btn-dark:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.btn-outline-dark{
+
+    border-radius:50px;
+
+    padding:14px 35px;
+
+}
+
+/* Badge */
+
+.badge{
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+}
+
+/* Stats */
+
+.counter{
+
+    color:#C59D5F;
+
+    font-weight:700;
+
+    font-size:40px;
+
+}
+
+small{
+
+    color:#777;
+
+}
+.hero-title{
+    animation:slideLeft 1.2s ease;
+}
+
+.product-img{
+    animation:float 4s ease-in-out infinite;
+}
+
+.btn{
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.product-card{
+    background:#fff;
+    border-radius:20px;
+    padding:20px;
+    position:absolute;
+    bottom:20px;
+    right:0;
+    animation:cardFloat 3s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0);}
+
+}
+
+@keyframes slideLeft{
+
+from{
+opacity:0;
+transform:translateX(-80px);
+}
+
+to{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+@keyframes cardFloat{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+
+}
+
+
+/* Navbar */
+
+.custom-navbar{
+
+background:rgba(255,255,255,.7);
+
+backdrop-filter:blur(20px);
+
+padding:15px 0;
+
+transition:.4s;
+
+}
+
+.logo{
+
+font-size:30px;
+
+font-family:'Playfair Display',serif;
+
+color:#C59D5F;
+
+}
+
+.nav-link{
+
+margin-left:20px;
+
+font-weight:500;
+
+color:#222 !important;
+
+transition:.3s;
+
+}
+
+.nav-link:hover{
+
+color:#C59D5F !important;
+
+}
+
+/* Footer */
+
+.footer{
+
+background:#222;
+
+color:#fff;
+
+padding:70px 0 30px;
+
+}
+
+.footer h5{
+
+margin-bottom:20px;
+
+}
+
+.footer a{
+
+color:#ddd;
+
+text-decoration:none;
+
+line-height:35px;
+
+transition:.3s;
+
+}
+
+.footer a:hover{
+
+color:#C59D5F;
+
+}
+
+.social-icons a{
+
+display:inline-block;
+
+width:45px;
+
+height:45px;
+
+line-height:45px;
+
+text-align:center;
+
+border-radius:50%;
+
+background:#333;
+
+margin-right:10px;
+
+font-size:20px;
+
+}
+
+.social-icons a:hover{
+
+background:#C59D5F;
+
+color:#fff;
+
+transform:translateY(-5px);
+
+transition:.4s;
+
+}
+
+.hero{
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(253,251,248,.85),
+        rgba(253,251,248,.85)),
+        url("../images/bg.jpg") center/cover no-repeat;
+}
+
+.product-wrapper{
+    position:relative;
+    display:inline-block;
+}
+
+.product-card{
+    position:absolute;
+    bottom:20px;
+    right:-20px;
+}
